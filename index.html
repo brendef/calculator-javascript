@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <title> Calculator </title>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+<!--                    <a class="navbar-brand" href="#">Calculator</a>-->
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Page 1</a></li>
+                        <li><a href="#">Page 2</a></li>
+                        <li><a href="#">Page 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div id="screen">
+                    <h1 id="nums"></h1>
+                </div>
+            </div>
+            <div class= "row">
+                <button id="clear" class= "buttons functions-top-bottom">
+                    <h3> C </h3>
+                </button>
+                <button class= "buttons functions-top-bottom">
+                    <h3> +/- </h3>
+                </button>
+                <button class= "buttons functions-top-bottom">
+                    <h3> % </h3>
+                </button>
+                <button id="devide" class= "buttons functions-right">
+                    <h3> / </h3>
+                </button>
+            </div>
+            <div class= "row">
+                <button id="nr7" class= "buttons numbers">
+                    <h3> 7 </h3>
+                </button>
+                <button id="nr8" class= "buttons numbers">
+                    <h3> 8 </h3>
+                </button>
+                <button id="nr9" class= "buttons numbers">
+                    <h3> 9 </h3>
+                </button>
+                <button id="multiply" class= "buttons functions-right">
+                    <h3> x </h3>
+                </button>
+            </div>
+            <div class= "row">
+                <button id="nr4" class= "buttons numbers">
+                    <h3> 4 </h3>
+                </button>
+                <button id="nr5" class= "buttons numbers">
+                    <h3> 5 </h3>
+                </button>
+                <button id="nr6" class= "buttons numbers">
+                    <h3> 6 </h3>
+                </button>
+                <button id="minus" class= "buttons functions-right">
+                    <h3> - </h3>
+                </button>
+            </div>
+            <div class= "row">
+                <button id="nr1" class= "buttons numbers">
+                    <h3> 1 </h3>
+                </button>
+                <button id="nr2" class= "buttons numbers">
+                    <h3> 2 </h3>
+                </button>
+                <button id="nr3" class= "buttons numbers">
+                    <h3> 3 </h3>
+                </button>
+                <button id="plus" class= "buttons functions-right">
+                    <h3> + </h3>
+                </button>
+            </div>
+            <div class= "row">
+                <button class= "buttons numbers zero functions-top-bottom">
+                    <h3> 0 </h3>
+                </button>
+                <button class= "buttons numbers functions-top-bottom">
+                    <h3> . </h3>
+                </button>
+                <button class= "buttons functions-right">
+                    <h3> = </h3>
+                </button>
+            </div>
+        </div>
+
+        <a id="l"></a>
+
+        <script src="index.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>
