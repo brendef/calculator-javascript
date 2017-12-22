@@ -13,7 +13,7 @@ function plus(number) {
   fullnumber = 0;
   currentInput.length = 0;
 }
-// 
+
 function minus(number) {
   fn = parseInt(number, 10);
   total -= fn;
@@ -25,18 +25,19 @@ for(let i = 0; i < numbersArr.length; i++) {
   numbersArr[i].addEventListener("click", function() {
       currentInput.push(numbersArr[i].innerText);
       fullnumber = currentInput.join("");
-      document.getElementById("nums").innerHTML = fullnumber;
+      tfn = fullnumber.replace(/\s/g,'');
+      document.getElementById("nums").innerHTML = tfn;
   });
 }
 
 for(let i = 0; i < functions.length; i++) {
   functions[i].addEventListener("click", function() {
       if(functions[i].id == "plus"){
-        plus(fullnumber);
+        plus(tfn);
         document.getElementById("nums").innerHTML = total;
       }
       if(functions[i].id == "minus"){
-        minus(fullnumber);
+        minus(tfn);
         document.getElementById("nums").innerHTML = total;
       }
       if(functions[i].id == "multiply") {
@@ -46,5 +47,4 @@ for(let i = 0; i < functions.length; i++) {
   });
 }
 
-// setInterval(function(){ document.getElementById("l").innerHTML = total; }, 1000);
-});
+ setInterval(function(){ document.getElementById("l").innerHTML = total; }, 100);
