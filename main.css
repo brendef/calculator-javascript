@@ -35,10 +35,16 @@
 
 #screen {
     height: 200px;
-    background-color: black; 
+    background-color: black;
 }
 
 #nums {
+    color: white;
+    float: right;
+    margin: 30px;
+}
+
+#answer {
     color: white;
     float: right;
     margin: 30px;
