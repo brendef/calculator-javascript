@@ -5,31 +5,10 @@
         <title> Calculator </title>
     </head>
     <body>
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-<!--                    <a class="navbar-brand" href="#">Calculator</a>-->
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">Page 1</a></li>
-                        <li><a href="#">Page 2</a></li>
-                        <li><a href="#">Page 3</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
         <div class="container">
             <div class="row">
                 <div id="screen">
-                    <h1 id="nums"></h1>
+                    <h1 id="nums"></h1> 
                     <h1 id="answer"></h1>
                 </div>
             </div>
@@ -96,16 +75,11 @@
                 <button class= "buttons numbers functions-top-bottom">
                     <h3> . </h3>
                 </button>
-                <button class= "buttons functions-right">
+                <button id="equals" class= "buttons functions-right">
                     <h3> = </h3>
                 </button>
             </div>
         </div>
-
-        <a id="l"></a>
-        <a id="var1"></a>
-        <a id="var2"></a>
-        <a id="func"></a>
 
         <script src="index.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
