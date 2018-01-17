@@ -3,11 +3,9 @@ const functions      = document.getElementsByClassName('functions-right');
 const numbersArr     = document.getElementsByClassName('numbers');
 
 // All 'Let' Variables Created Here.
-let n         = 0;
 let fn        = 0;
 let tfn       = "";
 let total     = 0;
-let answers   = [0];
 let tempTotal = 0;
 let selectedFunction = null;
 
@@ -16,6 +14,19 @@ for(let i = 0; i < numbersArr.length; i++) {
       tfn = tfn.concat(numbersArr[i].innerText).replace(/\s/g,'');
       document.getElementById("nums").innerHTML = tfn;
       fn = parseInt(tfn, 10);
+
+      if (selectedFunction == "minus") {
+        fn = fn * -1;
+      }
+
+      if (selectedFunction == "multiply") {
+        fn = (total * fn) - total;
+      }
+
+      if (selectedFunction == "devide") {
+        fn = (total / fn) - total;
+      }
+
       tempTotal = total + fn;
   });
 }
