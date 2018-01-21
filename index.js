@@ -1,5 +1,5 @@
 // All 'Const' Variables Created Here.
-const functions      = document.getElementsByClassName('functions-right');
+const functions      = document.getElementsByClassName('function');
 const numbersArr     = document.getElementsByClassName('numbers');
 
 // All 'Let' Variables Created Here.

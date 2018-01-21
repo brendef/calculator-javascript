@@ -1,88 +1,76 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="main.css">
-        <title> Calculator </title>
-    </head>
-    <body>
-        <div class="container">
-            <div class="row">
-                <div id="screen">
-                    <h1 id="nums"></h1>
-                    <h1 id="answer"></h1>
-                </div>
-            </div>
-            <div class= "row">
-                <button id="clear" class= "buttons functions-top-bottom">
-                    <h3> C </h3>
-                </button>
-                <button class= "buttons functions-top-bottom">
-                    <h3> +/- </h3>
-                </button>
-                <button class= "buttons functions-top-bottom">
-                    <h3> % </h3>
-                </button>
-                <button id="devide" class= "buttons functions-right">
-                    <h3> / </h3>
-                </button>
-            </div>
-            <div class= "row">
-                <button id="nr7" class= "buttons numbers">
-                    <h3> 7 </h3>
-                </button>
-                <button id="nr8" class= "buttons numbers">
-                    <h3> 8 </h3>
-                </button>
-                <button id="nr9" class= "buttons numbers">
-                    <h3> 9 </h3>
-                </button>
-                <button id="multiply" class= "buttons functions-right">
-                    <h3> x </h3>
-                </button>
-            </div>
-            <div class= "row">
-                <button id="nr4" class= "buttons numbers">
-                    <h3> 4 </h3>
-                </button>
-                <button id="nr5" class= "buttons numbers">
-                    <h3> 5 </h3>
-                </button>
-                <button id="nr6" class= "buttons numbers">
-                    <h3> 6 </h3>
-                </button>
-                <button id="minus" class= "buttons functions-right">
-                    <h3> - </h3>
-                </button>
-            </div>
-            <div class= "row">
-                <button id="nr1" class= "buttons numbers">
-                    <h3> 1 </h3>
-                </button>
-                <button id="nr2" class= "buttons numbers">
-                    <h3> 2 </h3>
-                </button>
-                <button id="nr3" class= "buttons numbers">
-                    <h3> 3 </h3>
-                </button>
-                <button id="plus" class= "buttons functions-right">
-                    <h3> + </h3>
-                </button>
-            </div>
-            <div class= "row">
-                <button class= "buttons numbers zero functions-top-bottom">
-                    <h3> 0 </h3>
-                </button>
-                <button class= "buttons numbers functions-top-bottom">
-                    <h3> . </h3>
-                </button>
-                <button id="equals" class= "buttons functions-right">
-                    <h3> = </h3>
-                </button>
-            </div>
+  <head>
+    <title> Calculator </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device.width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div class="grid">
+      <div class="screen">
+        <h1 id="nums"></h1>
+        <h1 id="answer"></h1>
+      </div>
+
+        <div class="numPad">
+          <button class="seven buttons numbers">
+            <h3> 7 </h3>
+          </button>
+          <button class="eight buttons numbers">
+            <h3> 8 </h3>
+          </button>
+          <button class="nine buttons numbers">
+            <h3> 9 </h3>
+          </button>
+          <button class="four buttons numbers">
+            <h3> 4 </h3>
+          </button>
+          <button class="five buttons numbers">
+            <h3> 5 </h3>
+          </button>
+          <button class="six buttons numbers">
+            <h3> 6 </h3>
+          </button>
+          <button class="one buttons numbers">
+            <h3> 1 </h3>
+          </button>
+          <button class="two buttons numbers">
+            <h3> 2 </h3>
+          </button>
+          <button class="three buttons numbers">
+            <h3> 3 </h3>
+          </button>
+          <button class="decimal buttons numbers">
+            <h3> . </h3>
+          </button>
+          <button class="zero buttons numbers">
+            <h3> 0 </h3>
+          </button>
+          <button class="equals buttons numbers">
+            <h3> = </h3>
+          </button>
         </div>
 
-        <script src="index.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    </body>
+        <div class="functions">
+          <button class="clear buttons function">
+            <h3> c </h3>
+          </button>
+          <button id="devide" class="devide buttons function">
+            <h3> ÷ </h3>
+          </button>
+          <button id="multiply" class="multiply buttons function">
+            <h3> x </h3>
+          </button>
+          <button id="minus" class="minus buttons function">
+            <h3> - </h3>
+          </button>
+          <button id="plus" class="plus buttons function">
+            <h3> + </h3>
+          </button>
+        </div>
+      </div>
+
+  <script src="index.js"></script>
+  </body>
 </html>

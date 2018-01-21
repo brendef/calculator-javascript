@@ -1,185 +1,138 @@
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
-.container {
-    text-align: center;
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 4fr 1fr 3fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas:
+  ". screen screen ."
+  ". numPad functions .";
 }
 
-.buttons {
-    height: 100px;
-    width: 100px;
-    text-align: center;
-    display: inline-block;
-    border: 0.5px solid black;
-    border-radius: 0px;
+.numPad {
+  grid-area: numPad;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "seven eight nine"
+  "four five six"
+  "one two three"
+  "decimal zero equals";
 }
 
-.numbers {
-    background-color: #ecf0f1;
+.functions {
+  grid-area: functions;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "clear"
+  "devide"
+  "multiply"
+  "minus"
+  "plus";
 }
 
-.functions-top-bottom {
-    background-color: #bdc3c7;
-}
+.screen {
+  grid-area: screen;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  ". nums"
+  ". answer";
 
-.functions-right {
-    background-color: #f39c12;
-    color: white;
-}
-
-.zero {
-    width: 204px;
-}
-
-#screen {
-    height: 200px;
-    background-color: black;
+  background-color: black;
 }
 
 #nums {
-    color: white;
-    float: right;
-    margin: 30px;
+  grid-area: nums;
+  color: white;
+  text-align: right;
 }
 
 #answer {
-    color: white;
-    float: right;
-    margin: 30px;
+  grid-area: answer;
+  color: white;
+  text-align: right;
 }
 
-/*==============================*/
-
-.numbers:active {
-    border: 2.5px solid black;
+.seven {
+  grid-area: seven;
 }
 
-.functions-top-bottom:active {
-    border: 2.5px solid black;
+.eight {
+  grid-area: eight;
 }
 
-.functions-right:active {
-    border: 2.5px solid black;
+.nine {
+  grid-area: nine;
+}
+.four {
+  grid-area: four;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*=============================================================*/
-
-/*
-@media (max-width:600, min-width: 600px){
-    body{
-        width: 600px;
-    }
+.five {
+  grid-area: five;
 }
-*/
 
-@media (max-width: 5000px) {
-    .navbar-header {
-        float: none;
-    }
-    .navbar-left,.navbar-right {
-        float: none !important;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-    .navbar-fixed-top {
-        top: 0;
-        border-width: 0 0 1px;
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
-        margin-top: 7.5px;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .collapse.in{
-        display:block !important;
-    }
+.six {
+  grid-area: six;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.decimal {
+  grid-area: decimal;
+}
+
+.zero {
+  grid-area: zero;
+}
+
+.equals {
+  grid-area: equals;
+}
+
+.clear {
+  grid-area: clear;
+}
+
+.devide {
+  grid-area: devide;
+}
+
+.multiply {
+  grid-area: multiply;
+}
+
+.minus {
+  grid-area: minus;
+}
+
+.plus {
+  grid-area: plus;
+}
+
+.buttons {
+  height: 100px;
+  border: none;
+}
+
+.numbers {
+  background-color: white;
 }
