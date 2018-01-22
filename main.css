@@ -12,6 +12,18 @@
   ". numPad functions .";
 }
 
+.screen {
+  grid-area: screen;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas:
+  ". nums"
+  "equalsSign answer";
+
+  background-color: black;
+}
+
 .numPad {
   grid-area: numPad;
   display: grid;
@@ -37,102 +49,41 @@
   "plus";
 }
 
-.screen {
-  grid-area: screen;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-  ". nums"
-  ". answer";
-
-  background-color: black;
-}
-
 #nums {
   grid-area: nums;
   color: white;
   text-align: right;
+  padding-top: 30%;
+  padding-right: 10%;
+
+  font-family: arial;
 }
 
 #answer {
   grid-area: answer;
   color: white;
   text-align: right;
+  padding-right: 10%;
+
+  font-family: arial;
 }
 
-.seven {
-  grid-area: seven;
-}
+#operator {
+  grid-area: equalsSign;
+  color: white;
+  padding-left: 10%;
 
-.eight {
-  grid-area: eight;
-}
-
-.nine {
-  grid-area: nine;
-}
-.four {
-  grid-area: four;
-}
-
-.five {
-  grid-area: five;
-}
-
-.six {
-  grid-area: six;
-}
-
-.one {
-  grid-area: one;
-}
-
-.two {
-  grid-area: two;
-}
-
-.three {
-  grid-area: three;
-}
-
-.decimal {
-  grid-area: decimal;
-}
-
-.zero {
-  grid-area: zero;
-}
-
-.equals {
-  grid-area: equals;
-}
-
-.clear {
-  grid-area: clear;
-}
-
-.devide {
-  grid-area: devide;
-}
-
-.multiply {
-  grid-area: multiply;
-}
-
-.minus {
-  grid-area: minus;
-}
-
-.plus {
-  grid-area: plus;
+  font-family: arial;
 }
 
 .buttons {
-  height: 100px;
   border: none;
 }
 
 .numbers {
+  background-color: white;
+}
+
+.equals {
   background-color: white;
 }
