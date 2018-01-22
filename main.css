@@ -80,6 +80,10 @@
   border: none;
 }
 
+.buttons:active {
+  font-size: 30%;
+}
+
 .numbers {
   background-color: white;
 }
