@@ -14,8 +14,8 @@ let selectedFunction = null;
 for(let i = 0; i < numbersArr.length; i++) {
   numbersArr[i].addEventListener("click", function() {
       tfn = tfn.concat(numbersArr[i].innerText).replace(/\s/g,'');
-      document.getElementById("nums").innerHTML = tfn;
       fn = parseFloat(tfn, 10);
+      document.getElementById("nums").innerHTML = fn;
       if (selectedFunction == "minus") {
         fn = fn * -1;
       }
