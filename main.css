@@ -19,8 +19,9 @@
   grid-template-rows: 2fr 1fr;
   grid-template-areas:
   ". nums"
-  "equalsSign answer";
+  "operator answer";
 
+  overflow: hidden;
   background-color: black;
 }
 
@@ -69,7 +70,7 @@
 }
 
 #operator {
-  grid-area: equalsSign;
+  grid-area: operator;
   color: white;
   padding-left: 10%;
 
@@ -78,6 +79,7 @@
 
 .buttons {
   border: none;
+  font-size: 100%;
 }
 
 .buttons:active {

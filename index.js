@@ -51,6 +51,15 @@ for(let i = 0; i < functions.length; i++) {
   });
 }
 
+document.getElementById("clear").addEventListener("dblclick", function() {
+  fn        = 0;
+  tfn       = "";
+  total     = 0;
+  tempTotal = 0;
+  selectedSign = "=";
+  selectedFunction = null;
+})
+
 // Display Results On Screen
 setInterval(function(){ document.getElementById("answer").innerHTML = tempTotal ; }, 1);
 setInterval(function(){ document.getElementById("operator").innerHTML =  selectedSign ; }, 1);
